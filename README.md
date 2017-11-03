@@ -63,7 +63,7 @@ Load the hosted web app at http://ec2-35-161-33-2.us-west-2.compute.amazonaws.co
     `cd catalog`
     1. Configure Python dependencies: (https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-django-application-on-ubuntu-16-04):
         1. `sudo apt-get install python3-pip`
-        1. `sudo pip3 install flask sqlalchemy python-slugify oauth2client`
+        1. `sudo pip3 install flask sqlalchemy psycopg2 python-slugify oauth2client`
     1. Adjust the app for server deployment:
         1. Update database connections in `application.py`, `models.py` and
     `populate_database.py` to `postgresql://catalog:catalog@localhost/catalog`
